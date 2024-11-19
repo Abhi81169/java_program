@@ -1,0 +1,36 @@
+import java.util.Scanner;
+  public class Blood_Donate {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input for age and weight
+       
+        System.out.println("Enter your Age:");
+        int age = sc.nextInt();
+        
+        System.out.println("Enter your Weight:");
+        int weight = sc.nextInt();
+
+        // Logic for blood donation eligibility
+        if (age > 20){
+            if (weight>50){
+                     System.out.println("You are eligible to donate blood!");
+                    } 
+            else {
+                    System.out.println("You are not eligible to donate blood due to insufficient weight.");
+                  }
+                } else if(age>=18 && age<=20){
+                   if(weight>=50){
+                               System.out.println("You are eligible to donate blood!");
+                             }  
+                 else {
+                   System.out.println("You are not eligible to donate blood due to insufficient weight.");
+                   }
+            }  
+         else {
+             System.out.println("You are a child and not eligible to donate blood.");
+              }
+
+     sc.close(); // Close the scanner
+    }
+}
