@@ -14,15 +14,15 @@ import java.util.Scanner;
         // Logic for blood donation eligibility
         if (age > 20){
             if (weight>50){
-                     System.out.println("You are eligible to donate blood!");
-                    } 
+         System.out.println("You are eligible to donate blood!");
+         } 
             else {
-                    System.out.println("You are not eligible to donate blood due to insufficient weight.");
-                  }
-                } else if(age>=18 && age<=20){
-                   if(weight>=50){
-                               System.out.println("You are eligible to donate blood!");
-                             }  
+          System.out.println("You are not eligible to donate blood due to insufficient weight.");
+            }
+          } else if(age>=18 && age<=20){
+             if(weight>=50){
+            System.out.println("You are eligible to donate blood!");
+              }  
                  else {
                    System.out.println("You are not eligible to donate blood due to insufficient weight.");
                    }
